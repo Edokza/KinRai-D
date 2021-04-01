@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp4087492"
+    tools:context=".InsertActivity">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:padding="@dimen/padding_regular"
+        android:text="@string/insert_menu"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/article_heading"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/bright"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/meattype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/pork"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bright1"
+                    android:onClick="select_meat_type_onclick"
+                    android:padding="10dp"
+                    android:text="@string/pork"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/pork" />
+
+                <RadioButton
+                    android:id="@+id/chicken"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bright1"
+                    android:onClick="select_meat_type_onclick"
+                    android:padding="10dp"
+                    android:text="@string/chicken"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/chiken" />
+
+                <RadioButton
+                    android:id="@+id/beef"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bright1"
+                    android:onClick="select_meat_type_onclick"
+                    android:padding="10dp"
+                    android:text="@string/beef"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/wagyu" />
+
+                <RadioButton
+                    android:id="@+id/seafood"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bright1"
+                    android:onClick="select_meat_type_onclick"
+                    android:padding="10dp"
+                    android:text="@string/seafood"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/seafood" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/speac1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/bright1"
+                android:padding="@dimen/padding_regular"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/foodtype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_200"
+                    android:onClick="select_food_type_onclick"
+                    android:padding="10dp"
+                    android:text="@string/rice"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/rice" />
+
+                <RadioButton
+                    android:id="@+id/noodle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/purple_200"
+                    android:onClick="select_food_type_onclick"
+                    android:padding="10dp"
+                    android:text="@string/noodle"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/noodle" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/speac2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="@dimen/padding_regular"
+                android:background="@color/purple_200"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/spicy_level"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/spicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/teal_700"
+                    android:onClick="select_spicy_level_onclick"
+                    android:padding="10dp"
+                    android:text="@string/spicy"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/man" />
+
+                <RadioButton
+                    android:id="@+id/not_spicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/teal_700"
+                    android:onClick="select_spicy_level_onclick"
+                    android:padding="10dp"
+                    android:text="@string/not_spicy"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="177dp"
+                    android:layout_height="143dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/child" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/speac"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="@dimen/padding_regular"
+                android:background="@color/teal_700"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/foodname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/insert_fd_name"
+                android:background="@color/white"
+                android:padding="@dimen/padding_regular"
+                android:inputType="textPersonName"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/insert_ph_num"
+                android:background="@color/white"
+                android:padding="@dimen/padding_regular"
+                android:inputType="phone"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="insert_onclick"
+                android:text="@string/insert_text" />
+
+
+            <TextView
+                android:id="@+id/speac3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="@dimen/padding_regular"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
